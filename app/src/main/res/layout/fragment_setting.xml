@@ -1,0 +1,154 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bg_setting"
+    tools:context="com.example.bahroel.motospark.menu.SettingFragment">
+
+    <RelativeLayout
+        android:id="@+id/pemberitahuan"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:text="Pemberitahuan"
+            android:textColor="@color/colorText"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/textView2" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_notif"
+            android:id="@+id/imageView5" />
+
+        <Switch
+            android:id="@+id/switchsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ubahNama"
+        android:layout_below="@+id/pemberitahuan"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/imageView6"
+            android:text="Ubah Nama"
+            android:textColor="@color/colorText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_ubah_nama"
+            android:id="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/chev1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_chev" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ubahPassword"
+        android:layout_below="@+id/ubahNama"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/imageView7"
+            android:text="Ubah Password"
+            android:textColor="@color/colorText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_ubah_password"
+            android:id="@+id/imageView7" />
+        <ImageView
+            android:id="@+id/chev2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_chev" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ubahPin"
+        android:layout_below="@+id/ubahPassword"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/imageView8"
+            android:text="Ubah PIN"
+            android:textColor="@color/colorText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon_ubah_pin"
+            android:id="@+id/imageView8" />
+
+        <ImageView
+            android:id="@+id/chev"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_chev" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

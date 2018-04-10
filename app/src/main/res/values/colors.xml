@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00ced1</color>
+    <color name="colorPrimaryDark">#02a7a9</color>
+    <color name="colorAccent">#03e2e6</color>
+    <color name="colorText">#f1b246</color>
+    <color name="colorButton">#d4b989</color>
+    <color name="colorLoginBiru">#64d3ef</color>
+    <color name="colorLoginBiruEfect">#7cadb9</color>
+    <color name="colorPad">#000000</color>
+    <color name="colorBorderForm">#ffb52b</color>
+    <color name="action_bar">#1f2649</color>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bahroel.motospark.setting.UbahPinActivity">
+
+
+    <ImageView
+        android:id="@+id/detUbahPin"
+        android:layout_width="210dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_det_ubah_pin"/>
+    <RelativeLayout
+        android:id="@+id/relUbahPin"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_below="@+id/detUbahPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp">
+
+            <EditText
+                android:id="@+id/input_edit_nama_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderlogin"
+                android:gravity="left"
+                android:paddingLeft="35dp"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:hint="Jamie Khan"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:background="#fffdf0"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Nama"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_edit_pin_setting"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relUbahPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubah"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:theme="@style/PrimaryButtonLogin" />
+
+</RelativeLayout>

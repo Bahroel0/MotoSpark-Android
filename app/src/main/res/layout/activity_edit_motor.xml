@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_edit_motor"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.bahroel.motospark.menu.EditMotorActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relNamaMotorEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp">
+
+            <EditText
+                android:id="@+id/input_nama_motor_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderform"
+                android:gravity="left"
+                android:paddingLeft="35dp"
+                android:inputType="text"
+                android:hint="Masukkan Nama Motor"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:background="#fffdf0"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Nama Motor"
+            android:textColor="@color/colorLoginBiru"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relNoPolEdit"
+        android:layout_below="@+id/relNamaMotorEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/input_nopol_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderform"
+                android:gravity="left"
+                android:paddingLeft="35dp"
+                android:inputType="text"
+                android:hint="Masukkan No Polisi"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:background="#fffdf0"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Nomor Polisi"
+            android:textColor="@color/colorLoginBiru"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relFotoEdit"
+        android:layout_below="@+id/relNoPolEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/input_foto_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderform"
+                android:gravity="center"
+                android:textColor="@color/colorLoginBiru"
+                android:textColorHint="@color/colorLoginBiru"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/btnCameraEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/input_foto_edit"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/half_circle"
+                android:src="@drawable/ic_camera" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:background="#fffdf0"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Foto Motor"
+            android:textColor="@color/colorLoginBiru"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/reFrameFotoEdit"
+        android:layout_below="@+id/relFotoEdit"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/frame_foto"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/foto_motor_edit"
+            android:src="@drawable/foto_motor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_connect_edit"
+        android:theme="@style/PrimaryButtonConnect"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Simpan Perubahan"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:layout_below="@+id/reFrameFotoEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute" />
+
+</RelativeLayout>

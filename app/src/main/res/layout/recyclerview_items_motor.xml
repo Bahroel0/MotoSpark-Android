@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/borderform">
+
+    <ImageView
+        android:id="@+id/motorItem"
+        android:layout_width="match_parent"
+        android:src="@drawable/foto_motor"
+        android:scaleType="fitXY"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/motorItem"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iconEdit"
+            android:layout_width="50dp"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_edit" />
+
+        <ImageView
+            android:id="@+id/iconDelete"
+            android:layout_width="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/iconEdit"
+            android:src="@drawable/icon_delete" />
+
+
+        <ImageView
+            android:id="@+id/iconDetail"
+            android:layout_width="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/iconEdit"
+            android:src="@drawable/icon_detail" />
+    </RelativeLayout>
+</RelativeLayout>
+
